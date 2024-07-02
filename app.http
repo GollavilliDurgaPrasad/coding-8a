@@ -3,7 +3,7 @@
 GET http://localhost:3000/todos/
 
 //api 2 
-GET http://localhost:3000/todos/2/
+GET http://localhost:3000/todos/1/
 
 
 //api 3
@@ -19,10 +19,10 @@ Content-Type:application/json
 
 
 //api 4
-POST http://localhost:3000/todos/
+PUT http://localhost:3000/todos/2/
 Content-Type:application/json
 
-{ "status": "DONE" }
+{"status": "DONE"}
 
 //api 5
 
