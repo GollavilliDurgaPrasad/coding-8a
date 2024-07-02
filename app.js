@@ -99,7 +99,6 @@ app.get('/todos/', async (request, response) => {
 
 app.get('/todos/:todoId/', async (request, response) => {
   const {todoId} = request.params
-
   const getTodoQuery = `
     SELECT
       *
@@ -155,6 +154,7 @@ app.put('/todos/:todoId/', async (request, response) => {
   const updateTodoQuery = `
     UPDATE
       todo
+    
     SET
       todo='${todo}',
       priority='${priority}',
